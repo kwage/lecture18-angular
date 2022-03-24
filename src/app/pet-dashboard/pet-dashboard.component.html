@@ -1,0 +1,13 @@
+
+<input type="radio" name="petType" id="dog" (click)="togglePetType(true)"/> Dog
+<input type="radio" name="petType" id="cat" (click)="togglePetType(false)"/> Cat
+
+<div *ngIf="showDogs === true; else showMyCats">
+    <p *ngFor="let dog of dogs">{{ dog }}</p>
+</div>
+
+<ng-template #showMyCats>
+    <p *ngFor="let cat of cats">{{ cat }}</p>
+</ng-template>
+
+<input type="text" #petName /><button (click)="addPet(petName.value)">Add</button>

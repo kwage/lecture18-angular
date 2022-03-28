@@ -12,7 +12,7 @@ export class PetDashboardComponent implements OnInit {
   cats: string[];
 
   constructor() { 
-    this.showDogs = false;
+    this.showDogs = true;
     this.dogs = ["Stark", "Bella", "Zeus", "Zoey", "Toby"];
     this.cats = ["Winston", "Stella", "Dexter", "Giffy"];
   }

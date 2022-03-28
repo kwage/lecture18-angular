@@ -9,7 +9,7 @@ import { PetDashboardComponent } from './pet-dashboard/pet-dashboard.component';
   declarations: [
     AppComponent,
     LabeledInputComponent,
-    PetDashboardComponent
+    PetDashboardComponent,
   ],
   imports: [
     BrowserModule

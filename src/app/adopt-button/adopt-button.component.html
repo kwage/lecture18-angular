@@ -1,0 +1,8 @@
+<p [class.is-adopted-styling]="isAdopted">
+    {{ petName }}
+    <button
+        (click)="toggleIsAdopted()"
+        [disabled]="isAdopted"
+        [style.visibility]="isAdopted ? 'hidden' : 'visibile'"
+    >Adopt Me!</button>
+</p>

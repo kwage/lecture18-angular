@@ -3,11 +3,11 @@
 <input type="radio" name="petType" id="cat" (click)="togglePetType(false)"/> Cat
 
 <div *ngIf="showDogs === true; else showMyCats">
-    <p *ngFor="let dog of dogs">{{ dog }}</p>
+    <p *ngFor="let dog of dogs"><app-adopt-button [petName]="dog"></app-adopt-button></p>
 </div>
 
 <ng-template #showMyCats>
-    <p *ngFor="let cat of cats">{{ cat }}</p>
+    <p *ngFor="let cat of cats"><app-adopt-button [petName]="cat"></app-adopt-button></p>
 </ng-template>
 
 <input type="text" #petName /><button (click)="addPet(petName.value)">Add</button>
